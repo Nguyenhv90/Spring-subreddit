@@ -1,7 +1,7 @@
 package com.hvn.springsubredditbackend.service;
 
-import com.hvn.blogwithspringandangular.dto.PostRequest;
-import com.hvn.blogwithspringandangular.dto.PostResponse;
+import com.hvn.springsubredditbackend.dto.PostRequest;
+import com.hvn.springsubredditbackend.dto.PostResponse;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

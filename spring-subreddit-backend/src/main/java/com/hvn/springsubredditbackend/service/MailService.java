@@ -1,7 +1,7 @@
 package com.hvn.springsubredditbackend.service;
 
-import com.hvn.blogwithspringandangular.config.exceptions.SpringRedditException;
-import com.hvn.blogwithspringandangular.model.NotificationEmail;
+import com.hvn.springsubredditbackend.config.exceptions.SpringRedditException;
+import com.hvn.springsubredditbackend.model.NotificationEmail;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.mail.MailException;

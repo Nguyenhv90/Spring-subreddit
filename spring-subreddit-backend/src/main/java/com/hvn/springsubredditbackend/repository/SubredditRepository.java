@@ -1,6 +1,6 @@
 package com.hvn.springsubredditbackend.repository;
 
-import com.hvn.blogwithspringandangular.model.Subreddit;
+import com.hvn.springsubredditbackend.model.Subreddit;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

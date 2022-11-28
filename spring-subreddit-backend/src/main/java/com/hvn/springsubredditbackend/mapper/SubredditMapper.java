@@ -1,8 +1,8 @@
 package com.hvn.springsubredditbackend.mapper;
 
-import com.hvn.blogwithspringandangular.dto.SubredditDto;
-import com.hvn.blogwithspringandangular.model.Post;
-import com.hvn.blogwithspringandangular.model.Subreddit;
+import com.hvn.springsubredditbackend.dto.SubredditDto;
+import com.hvn.springsubredditbackend.model.Post;
+import com.hvn.springsubredditbackend.model.Subreddit;
 import org.mapstruct.InheritInverseConfiguration;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;

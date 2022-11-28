@@ -1,7 +1,7 @@
 package com.hvn.springsubredditbackend.security;
 
-import com.hvn.blogwithspringandangular.config.exceptions.SpringRedditException;
-import com.hvn.blogwithspringandangular.model.User;
+import com.hvn.springsubredditbackend.config.exceptions.SpringRedditException;
+import com.hvn.springsubredditbackend.model.User;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import lombok.AllArgsConstructor;

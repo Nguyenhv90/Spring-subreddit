@@ -1,6 +1,6 @@
 package com.hvn.springsubredditbackend.config;
 
-import com.hvn.blogwithspringandangular.security.JwtAuthenticationFilter;
+import com.hvn.springsubredditbackend.security.JwtAuthenticationFilter;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;

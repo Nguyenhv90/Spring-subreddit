@@ -1,8 +1,8 @@
 package com.hvn.springsubredditbackend.service;
 
-import com.hvn.blogwithspringandangular.config.exceptions.SpringRedditException;
-import com.hvn.blogwithspringandangular.model.User;
-import com.hvn.blogwithspringandangular.repository.UserRepository;
+import com.hvn.springsubredditbackend.config.exceptions.SpringRedditException;
+import com.hvn.springsubredditbackend.model.User;
+import com.hvn.springsubredditbackend.repository.UserRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;

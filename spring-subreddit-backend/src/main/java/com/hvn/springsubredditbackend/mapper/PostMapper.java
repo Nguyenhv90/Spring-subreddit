@@ -1,10 +1,10 @@
 package com.hvn.springsubredditbackend.mapper;
 
-import com.hvn.blogwithspringandangular.dto.PostRequest;
-import com.hvn.blogwithspringandangular.dto.PostResponse;
-import com.hvn.blogwithspringandangular.model.Post;
-import com.hvn.blogwithspringandangular.model.Subreddit;
-import com.hvn.blogwithspringandangular.model.User;
+import com.hvn.springsubredditbackend.dto.PostRequest;
+import com.hvn.springsubredditbackend.dto.PostResponse;
+import com.hvn.springsubredditbackend.model.Post;
+import com.hvn.springsubredditbackend.model.Subreddit;
+import com.hvn.springsubredditbackend.model.User;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 

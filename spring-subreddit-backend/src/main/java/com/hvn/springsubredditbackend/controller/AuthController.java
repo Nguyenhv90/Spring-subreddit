@@ -1,9 +1,9 @@
 package com.hvn.springsubredditbackend.controller;
 
-import com.hvn.blogwithspringandangular.dto.AuthenticationResponse;
-import com.hvn.blogwithspringandangular.dto.LoginRequest;
-import com.hvn.blogwithspringandangular.dto.RegisterRequest;
-import com.hvn.blogwithspringandangular.service.AuthService;
+import com.hvn.springsubredditbackend.dto.AuthenticationResponse;
+import com.hvn.springsubredditbackend.dto.LoginRequest;
+import com.hvn.springsubredditbackend.dto.RegisterRequest;
+import com.hvn.springsubredditbackend.service.AuthService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -1,7 +1,7 @@
 package com.hvn.springsubredditbackend.controller;
 
-import com.hvn.blogwithspringandangular.dto.SubredditDto;
-import com.hvn.blogwithspringandangular.service.SubredditService;
+import com.hvn.springsubredditbackend.dto.SubredditDto;
+import com.hvn.springsubredditbackend.service.SubredditService;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;

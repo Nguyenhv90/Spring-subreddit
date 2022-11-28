@@ -1,6 +1,6 @@
 package com.hvn.springsubredditbackend.repository;
 
-import com.hvn.blogwithspringandangular.model.Vote;
+import com.hvn.springsubredditbackend.model.Vote;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

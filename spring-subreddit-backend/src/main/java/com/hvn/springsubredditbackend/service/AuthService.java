@@ -1,15 +1,15 @@
 package com.hvn.springsubredditbackend.service;
 
-import com.hvn.blogwithspringandangular.config.exceptions.SpringRedditException;
-import com.hvn.blogwithspringandangular.dto.AuthenticationResponse;
-import com.hvn.blogwithspringandangular.dto.LoginRequest;
-import com.hvn.blogwithspringandangular.dto.RegisterRequest;
-import com.hvn.blogwithspringandangular.model.NotificationEmail;
-import com.hvn.blogwithspringandangular.model.User;
-import com.hvn.blogwithspringandangular.model.VerificationToken;
-import com.hvn.blogwithspringandangular.repository.UserRepository;
-import com.hvn.blogwithspringandangular.repository.VerificationTokenRepository;
-import com.hvn.blogwithspringandangular.security.JwtProvider;
+import com.hvn.springsubredditbackend.config.exceptions.SpringRedditException;
+import com.hvn.springsubredditbackend.dto.AuthenticationResponse;
+import com.hvn.springsubredditbackend.dto.LoginRequest;
+import com.hvn.springsubredditbackend.dto.RegisterRequest;
+import com.hvn.springsubredditbackend.model.NotificationEmail;
+import com.hvn.springsubredditbackend.model.User;
+import com.hvn.springsubredditbackend.model.VerificationToken;
+import com.hvn.springsubredditbackend.repository.UserRepository;
+import com.hvn.springsubredditbackend.repository.VerificationTokenRepository;
+import com.hvn.springsubredditbackend.security.JwtProvider;
 import lombok.AllArgsConstructor;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

@@ -1,8 +1,8 @@
 package com.hvn.springsubredditbackend.controller;
 
-import com.hvn.blogwithspringandangular.dto.PostRequest;
-import com.hvn.blogwithspringandangular.dto.PostResponse;
-import com.hvn.blogwithspringandangular.service.PostService;
+import com.hvn.springsubredditbackend.dto.PostRequest;
+import com.hvn.springsubredditbackend.dto.PostResponse;
+import com.hvn.springsubredditbackend.service.PostService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -1,10 +1,10 @@
 package com.hvn.springsubredditbackend.service;
 
-import com.hvn.blogwithspringandangular.config.exceptions.SpringRedditException;
-import com.hvn.blogwithspringandangular.dto.SubredditDto;
-import com.hvn.blogwithspringandangular.mapper.SubredditMapper;
-import com.hvn.blogwithspringandangular.model.Subreddit;
-import com.hvn.blogwithspringandangular.repository.SubredditRepository;
+import com.hvn.springsubredditbackend.config.exceptions.SpringRedditException;
+import com.hvn.springsubredditbackend.dto.SubredditDto;
+import com.hvn.springsubredditbackend.mapper.SubredditMapper;
+import com.hvn.springsubredditbackend.model.Subreddit;
+import com.hvn.springsubredditbackend.repository.SubredditRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
