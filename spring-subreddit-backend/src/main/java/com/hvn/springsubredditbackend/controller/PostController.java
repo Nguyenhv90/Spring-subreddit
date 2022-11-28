@@ -23,12 +23,12 @@ public class PostController {
     }
 
     @GetMapping("/{id}")
-    public PostResponse getPost(@PathVariable Long id) {
-        return postService.getPost(id);
+    public ResponseEntity<PostResponse> getPost(@PathVariable Long id) {
+        return ResponseEntity.status(HttpStatus.OK).body(postService.getPost(id));
     }
     @GetMapping("/search")
-    public List<PostResponse> getAllPosts(@RequestBody PostRequest postRequest) {
-        return postService.getPostByCondition(postRequest);
+    public ResponseEntity<List<PostResponse>> getAllPosts(@RequestBody PostRequest postRequest) {
+        return ResponseEntity.status(HttpStatus.OK).body(postService.getPostByCondition(postRequest));
     }
 
 }

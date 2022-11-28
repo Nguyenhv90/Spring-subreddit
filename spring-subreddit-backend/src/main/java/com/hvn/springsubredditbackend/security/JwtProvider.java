@@ -1,11 +1,10 @@
 package com.hvn.springsubredditbackend.security;
 
 import com.hvn.springsubredditbackend.config.exceptions.SpringRedditException;
-import com.hvn.springsubredditbackend.model.User;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
-import lombok.AllArgsConstructor;
 import org.springframework.security.core.Authentication;
+import org.springframework.security.core.userdetails.User;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.PostMapping;
 
@@ -15,7 +14,6 @@ import java.security.*;
 import java.security.cert.CertificateException;
 
 @Service
-@AllArgsConstructor
 public class JwtProvider {
 
     private KeyStore keyStore;

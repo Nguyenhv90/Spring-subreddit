@@ -12,7 +12,7 @@ import org.mapstruct.Mapping;
 public interface PostMapper {
     @Mapping(target = "createdDate", expression = "java(java.time.Instant.now())")
     @Mapping(target = "description", source = "postRequest.description")
-    Post MapToEntity(PostRequest postRequest, Subreddit subreddit, User user);
+    Post mapToEntity(PostRequest postRequest, Subreddit subreddit, User user);
 
     @Mapping(target = "id", source = "postId")
     @Mapping(target = "subredditName", source = "subreddit.name")
