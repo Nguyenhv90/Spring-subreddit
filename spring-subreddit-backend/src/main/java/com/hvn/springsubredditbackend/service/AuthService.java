@@ -3,6 +3,7 @@ package com.hvn.springsubredditbackend.service;
 import com.hvn.springsubredditbackend.config.exceptions.SpringRedditException;
 import com.hvn.springsubredditbackend.dto.AuthenticationResponse;
 import com.hvn.springsubredditbackend.dto.LoginRequest;
+import com.hvn.springsubredditbackend.dto.RefreshTokenRequest;
 import com.hvn.springsubredditbackend.dto.RegisterRequest;
 import com.hvn.springsubredditbackend.model.NotificationEmail;
 import com.hvn.springsubredditbackend.model.User;
@@ -82,7 +83,12 @@ public class AuthService {
                         loginRequest.getPassword()));
         SecurityContextHolder.getContext().setAuthentication(authentication);
         String token = jwtProvider.generateToken(authentication);
-        return new AuthenticationResponse(token, loginRequest.getUsername());
+        return AuthenticationResponse.builder()
+                .authenticationToken(token)
+                .refreshToken("")
+                .expiresAt(Instant.now().plusMillis(jwtProvider.getJwtExpirationInMillis()))
+                .username(loginRequest.getUsername())
+                .build();
     }
 
     @Transactional(readOnly = true)
@@ -92,5 +98,10 @@ public class AuthService {
                         .getContext().getAuthentication().getPrincipal();
         return userRepository.findByUsername(principal.getUsername()).orElseThrow(
                 () -> new UsernameNotFoundException("Username not found - " + principal.getUsername()));
+    }
+
+    public AuthenticationResponse refreshToken(RefreshTokenRequest refreshTokenRequest) {
+
+        return null;
     }
 }
