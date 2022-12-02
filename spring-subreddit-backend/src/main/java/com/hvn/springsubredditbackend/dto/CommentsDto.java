@@ -1,7 +1,5 @@
 package com.hvn.springsubredditbackend.dto;
 
-import com.hvn.springsubredditbackend.model.Post;
-import com.hvn.springsubredditbackend.model.User;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
