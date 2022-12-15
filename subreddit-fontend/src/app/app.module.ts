@@ -11,13 +11,28 @@ import { LoginComponent } from './auth/login/login.component';
 import {NgxWebstorageModule} from 'ngx-webstorage';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { ToastrModule } from 'ngx-toastr';
+import { HomeComponent } from './home/home.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { VoteButtonComponent } from './shared/vote-button/vote-button.component';
+import { SideBarComponent } from './shared/side-bar/side-bar.component';
+import { SubredditSideBarComponent } from './shared/subreddit-side-bar/subreddit-side-bar.component';
+import { PostTileComponent } from './shared/post-tile/post-tile.component';
+import { CreateSubredditComponent } from './subreddit/create-subreddit/create-subreddit.component';
+import { CreatePostComponent } from './post/create-post/create-post.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     SignupComponent,
-    LoginComponent
+    LoginComponent,
+    HomeComponent,
+    VoteButtonComponent,
+    SideBarComponent,
+    SubredditSideBarComponent,
+    PostTileComponent,
+    CreateSubredditComponent,
+    CreatePostComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +41,8 @@ import { ToastrModule } from 'ngx-toastr';
     HttpClientModule,
     NgxWebstorageModule.forRoot(),
     BrowserAnimationsModule,
-    ToastrModule.forRoot()
+    ToastrModule.forRoot(),
+    FontAwesomeModule,
 
   ],
   providers: [],
