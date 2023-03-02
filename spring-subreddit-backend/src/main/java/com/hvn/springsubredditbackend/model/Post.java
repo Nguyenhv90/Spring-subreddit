@@ -1,16 +1,14 @@
 package com.hvn.springsubredditbackend.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import jakarta.persistence.*;
+import lombok.*;
 import org.springframework.lang.Nullable;
 
-import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import java.time.Instant;
 
-@Data
+@Getter
+@Setter
 @Entity
 @Builder
 @AllArgsConstructor

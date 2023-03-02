@@ -36,6 +36,11 @@ public abstract class PostMapper {
     @Mapping(target = "duration", expression = "java(getDuration(post))")
     public abstract PostResponse mapToDto(Post post);
 
+
+    Integer commentCount(Post post) {
+        return commentRepository.findByPost(post).size();
+    }
+
     String getDuration(Post post) {
         return TimeAgo.using(post.getCreatedDate().toEpochMilli());
     }
